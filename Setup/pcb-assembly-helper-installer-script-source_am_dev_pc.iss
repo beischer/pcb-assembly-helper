@@ -6,7 +6,7 @@
 #define MyAppPublisher "Auto-Maskin AS"
 #define MyAppURL "http://www.auto-maskin.com/"
 #define MyAppExeName "PCBAsemblyHelper.exe"
-#define QTDIR "C:\Qt\5.1.1\mingw48_32"
+#define QTDIR "C:\Qt\5.7\mingw53_32"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -35,15 +35,15 @@ Name: desktopicon; Description: {cm:CreateDesktopIcon}; GroupDescription: {cm:Ad
 Name: quicklaunchicon; Description: {cm:CreateQuickLaunchIcon}; GroupDescription: {cm:AdditionalIcons}; Flags: unchecked
 
 [Files]
-Source: ..\..\build-PCBAsemblyHelper-Desktop_Qt_5_1_1_MinGW_32bit-Release\release\PCBAsemblyHelper.exe; DestDir: {app}; Flags: ignoreversion
+Source: ..\..\build-PCBAsemblyHelper-Desktop_Qt_5_7_0_MinGW_32bit2-Release\release\PCBAsemblyHelper.exe; DestDir: {app}; Flags: ignoreversion
 Source: {#QTDIR}\bin\Qt5Core.dll; DestDir: {app}; Flags: ignoreversion
 Source: {#QTDIR}\bin\Qt5Gui.dll; DestDir: {app}; Flags: ignoreversion
 Source: {#QTDIR}\bin\Qt5Widgets.dll; DestDir: {app}; Flags: ignoreversion
 Source: {#QTDIR}\bin\Qt5Svg.dll; DestDir: {app}; Flags: ignoreversion
 Source: {#QTDIR}\bin\libgcc_s_dw2-1.dll; DestDir: {app}; Flags: ignoreversion
-Source: {#QTDIR}\bin\icuin51.dll; DestDir: {app}; Flags: ignoreversion
-Source: {#QTDIR}\bin\icuuc51.dll; DestDir: {app}; Flags: ignoreversion
-Source: {#QTDIR}\bin\icudt51.dll; DestDir: {app}; Flags: ignoreversion
+;Source: {#QTDIR}\bin\icuin51.dll; DestDir: {app}; Flags: ignoreversion
+;Source: {#QTDIR}\bin\icuuc51.dll; DestDir: {app}; Flags: ignoreversion
+;Source: {#QTDIR}\bin\icudt51.dll; DestDir: {app}; Flags: ignoreversion
 Source: {#QTDIR}\bin\libstdc++-6.dll; DestDir: {app}; Flags: ignoreversion
 Source: {#QTDIR}\bin\libwinpthread-1.dll; DestDir: {app}; Flags: ignoreversion
 Source: {#QTDIR}\plugins\platforms\qwindows.dll; DestDir: {app}\platforms; Flags: ignoreversion
